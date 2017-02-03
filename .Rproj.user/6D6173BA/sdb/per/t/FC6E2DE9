@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(plotly)\nx= (11:16)\nx1= (1:6)\ny=rnorm(length(x))\ny1=rnorm(length(x1))\n# z = data.frame(x,y)\npar(mfrow = c(2,2))\nplot(x=x,y=y)\nplot(x=x1,y=y1)",
+    "created" : 1484715717730.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4102332122",
+    "id" : "FC6E2DE9",
+    "lastKnownWriteTime" : 1480509202,
+    "last_content_update" : 1480509202,
+    "path" : "~/Desktop/Old Data/ok/Ashutosh's project/plotlyexample.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

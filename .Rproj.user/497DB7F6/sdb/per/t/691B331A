@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "    \n    library(shiny)\n    library(shinyBS)\n    \n    shinyUI(fluidPage(\n    \n      # Application title\n      titlePanel(h1(\"ConsultAdd\", align = \"center\", style = \"color:red\")),\n      tabsetPanel(\n        tabPanel(\"Marketing\", sidebarLayout(\n          sidebarPanel(textInput(\"id\",label = \"Enter consultant Name\"),\n                       selectInput('s1','Select Names',choices = ''),\n                       actionButton(\"a\",\"Submit\")),\n          mainPanel(\n            textOutput('out'),\n            textOutput(\"sout\"))\n        )),\n        \n        tabPanel(\"Recruitment\",sidebarLayout(\n          sidebarPanel(textInput(\"id1\",label = \"Enter consultant Name\"),\n                       actionButton(\"a1\",\"Submit\")\n                      ),\n          mainPanel(\n            textOutput('out1')\n          )\n         )\n        ),\n        \n        tabPanel(\"Engineering\",sidebarLayout(\n          sidebarPanel(textInput(\"id2\",label = \"Enter consultant Name\"),\n                       actionButton(\"a2\",\"Submit\")\n                      ),\n          mainPanel(\n            textOutput('out2')\n          )\n         )\n        ),\n        \n        tabPanel(\"Finance\",sidebarLayout(\n          sidebarPanel(textInput(\"id3\",label = \"Enter consultant Name\"),\n                       actionButton(\"a3\",\"Submit\")\n                      ),\n          mainPanel(\n            textOutput('out3')\n          )\n         )\n        ),\n        \n        tabPanel(\"Legal\",sidebarLayout(\n          sidebarPanel(textInput(\"id4\",label = \"Enter consultant Name\"),\n                       actionButton(\"a4\",\"Submit\")\n                      ),\n          mainPanel(\n            textOutput('out4')\n          )\n         )\n        ),\n        \n        tabPanel(\"Test\",\n            mainPanel(\n            tableOutput('table'),\n            tableOutput('table1')\n          )       \n         ),\n        \n        tabPanel(\"Admin\",\n\n                   # fluidRow(\n                   #   column(6, bsButton(\"ADDID\", \"Add\", size=\"Large\",type=\"toggle\")),\n                   #   column(4,bsButton(\"ViewID\", \"View\", size=\"Large\",type=\"toggle\"))\n                  navlistPanel(\n                    tabPanel(\"Add\", h3(\"Admin Add options will display here\")),\n                    tabPanel(\"View\",h3(\"Admin will view information here\"))\n                  ) \n                 \n                 \n                  )\n                 )\n              )\n           )\n         \n",
+    "created" : 1484299636892.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "22692267",
+    "id" : "691B331A",
+    "lastKnownWriteTime" : 1484299885,
+    "last_content_update" : 1484299885693,
+    "path" : "~/Desktop/consultr/consult/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "    library(shiny)\n    \n    shinyServer(function(input, output, session) {\n      v <- (read.csv('consultant.csv', header = T))\n      v1 <-  v[[1]]\n      print(v$Name)\n      observeEvent(input$a,{\n      output$out <- renderText(input$id)\n       output$sout <- renderText(input$s1)\n     })\n      \n      observeEvent(input$a1,{\n                   output$out1 <- renderText(input$id1)\n      })\n      \n      observeEvent(input$a2,{\n                   output$out2 <- renderText(input$id2)\n      })\n      \n      observeEvent(input$a3,{\n                   output$out3 <- renderText(input$id3)\n                    })\n      \n      observeEvent(input$a4,{\n                   output$out4 <- renderText(input$id4)\n                    })\n     \n       outvar= reactive({\n        v <- (read.csv('consultant.csv', header = T))\n        v1 <-  v[[1]]\n              })\n      observe({\n        updateSelectInput(session, 's1', choices = outvar())\n      })\n      \n      output$table1 <- renderTable(v,width = '1000px')\n      })\n",
+    "created" : 1484299629854.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3272110701",
+    "id" : "F03341BA",
+    "lastKnownWriteTime" : 1484300035,
+    "last_content_update" : 1484300035343,
+    "path" : "~/Desktop/consultr/consult/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
